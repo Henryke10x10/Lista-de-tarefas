@@ -29,6 +29,7 @@ btnTarefa.addEventListener('click', function() {
         return 
     }
     criaTarefa(inputTarefa.value)
+    inputTarefa.value = ''
 })
 
 function btnApagar(li) {
