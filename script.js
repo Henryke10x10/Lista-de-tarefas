@@ -34,7 +34,7 @@ btnTarefa.addEventListener('click', function() {
 
 function btnApagar(li) {
     const btnApagar = document.createElement('button')
-    btnApagar.innerText = 'Apagar'
+    btnApagar.innerHTML = '<i class="far fa-trash-alt"></i>'
     btnApagar.setAttribute('class', 'apagar')
     li.appendChild(btnApagar)
 }
