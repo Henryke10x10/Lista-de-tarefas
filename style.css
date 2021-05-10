@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
 
+:root {
+    --primary-color: #098066;
+    --bg-color: #141118;
+    --gray: #e6e6e6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +16,14 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: rgb(24, 28, 31);
+    background: var(--bg-color);
     font-family: 'Lexend', sans-serif;
 }
 
 .container {
     margin: 1rem;
     padding: 1rem;
-    color: #fff;
+    color: var(--gray);
 }
 
 .header {
@@ -26,6 +32,7 @@ body {
 
 .header h1 {
     margin: 10px;
+    color: #fff;
 }
 
 .input-tarefa {
@@ -33,7 +40,7 @@ body {
     margin: 5px;
     outline: none;
     color: #fff;
-    border: navajowhite;
+    border: none;
     border-bottom: thin solid rgb(200, 219, 233);
     transform: scale(.9);
     
@@ -43,22 +50,22 @@ body {
 .input-tarefa:focus {
     background: transparent;
     margin: 5px;
-    border: navajowhite;
-    border-bottom: thin solid rgb(16, 153, 96);
+    border: none;
+    border-bottom: thin solid var(--primary-color);
     transform: scale(1);
 }
 
 .tarefas li {
     padding: 5px;
     font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 25px 20px 5px 20px;
     list-style: circle;
 }
 
 button {
     color: #fff;
-    background: rgb(16, 153, 96);
+    background: var(--primary-color);
     border: none;
     border-radius: 5px;
     padding: 6px;
